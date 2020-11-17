@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	/*linear-gradient(to bottom, #2271B3 0%, #08ffff 70%, #05c1fa 100%);*/
+}
+
+.img {
+	background-image: url(img/sky6.jpg);
+	position: relative;
+	background-size: cover;
+	animation: sky 10s linear infinite;
+	animation-play-state: paused;
+	z-index: 0;
+}
+
+@keyframes sky {
+	0% {filter: brightness(110%);}
+	20% { filter: brightness(100%);}
+	35% { filter: brightness(90%);}
+	45% { filter: brightness(70%);}
+	55% { filter: brightness(50%);}
+	75% { filter: brightness(50%);}
+	95% {filter: brightness(20%);}
+	100% {filter: brightness(50%);}
+}
+
+.sea {
+	width: 200%;
+	height: 177px;
+	background-image: url(img/sea3.jpg);
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	animation: sea 10s linear infinite;
+	animation-play-state: paused;
+	z-index: 3;
+}
+
+@keyframes sea {
+	100% {background-position: 100%; 0;}
+	0% {/*filter: hue-rotate(20deg);*/}
+	20% { /*filter: hue-rotate(30deg);*/}
+	35% { /*filter: hue-rotate(40deg);*/}
+	45% {/* filter: hue-rotate(50deg);*/}
+	55% { /*filter: hue-rotate(50deg);*/}
+	75% { /*filter: hue-rotate(50deg);*/}
+	95% { /*filter: hue-rotate(50deg);*/}
+	100% {/*filter: hue-rotate(50deg);*/}
+}
+
+.cloud1 {
+	width: 196px;
+	height: 99px;
+	background-repeat: no-repeat;
+	background-image: url(img/cloud2.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: cloud 15s linear infinite;
+	transform: translateX(1000%);
+	animation-play-state: paused;
+	z-index: 2;
+}
+
+.cloud2 {
+	width: 196px;
+	height: 99px;
+	background-repeat: no-repeat;
+	background-image: url(img/cloud2.png);
+	position: absolute;
+	top: 100px;
+	animation: cloud 10s linear infinite;
+	transform: translateX(800%);
+	animation-play-state: paused;
+	z-index: 2;
+}
+
+@keyframes cloud { 100% {transform: translateX(-300%);}
+
+}
+
+.sun {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: -5%;
+	top: 20%;
+	border-radius: 50%;
+	background: linear-gradient(#f1e767 0%, #feb645 51%, #feb645 84%);
+	animation: sun 10s linear infinite;
+	animation-play-state: paused;
+	z-index: 1;
+}
+
+@keyframes sun {
+	0% { left: -20%; top: 20%;}
+	5% {  }
+	35% {}
+	45% { }
+	55% {}
+	75% { }
+	95% { }
+	100% { left: 80%; top: 90%;}
+}
+
+.run {
+	animation-play-state: running;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
